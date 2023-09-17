@@ -1,0 +1,173 @@
+body {
+	position: absolute;
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	height: 100%;
+	font-size: 15px;
+	font-family: Tahoma, Arial, sans-serif;
+	color: white;
+	background-color: black;
+	overflow: hidden;
+	-webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+	display: grid;
+	justify-content: center;
+	align-content: center;
+}
+
+#bg {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background-color: gray;
+}
+
+#wrapper {
+	position: relative;
+}
+
+#nameBlock {
+	position: relative;
+	width: 300px;
+	height: calc(100% - 30px);
+	float: left;
+	margin-right: 5px;
+	border-radius: 15px 5px 5px 15px;
+}
+
+#gamesBlock {
+	width: 400px;
+	height: 400px;
+	border-radius: 5px;
+}
+
+#linksBlock {
+	position: relative;
+	width: 300px;
+	height: calc(100% - 30px);
+	float: right;
+	margin-left: 5px;
+	border-radius: 5px 15px 15px 5px;
+}
+
+#linkList {
+	width: 100%;
+	margin-top: 10px;
+}
+
+.link {
+	position: relative;
+	display: block;
+	width: 100%;
+	color: black;
+	text-decoration: none;
+	color: black;
+	background-image: url('img/linkBg.png');
+	box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #fff, inset -2px -2px grey, inset 2px 2px #dfdfdf;
+	padding: 5px 0 5px 0;
+	transition: box-shadow 0.1s, transform 0.1s;
+}
+
+.link:hover {
+	box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #fff, inset -2px -2px grey, inset 2px 2px #dfdfdf, 0 2px 10px black;
+	transform: scale(1.1);
+	z-index: 999;
+}
+
+.linka {
+	position: relative;
+	left: 38px;
+	font-size: 16px;
+	height: 100%;
+	background-color: silver;
+	font-family: 'MS PGothic',Arial;
+}
+
+.linkIcon {
+	position: relative;
+	display: inline-block;
+	margin: -28px -15px -25px -15px;
+	vertical-align: middle;
+	width: 24px;
+	height: 24px;
+	left: 18px;
+}
+
+#gameList {
+	width: 100%;
+	height: calc(100% - 55px);
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+.game {
+	display: block;
+	text-decoration: none;
+	width: 100%;
+	padding: 10px 0 10px 0;
+	background-size: 500px 100px;
+	box-shadow: 0 0 15px black inset;
+	transition: box-shadow 0.2s;
+}
+
+.game:hover {
+	box-shadow: 0 0 15px white inset;
+}
+
+.gameTitle {
+	position: relative;
+	width: calc(100% - 58px);
+	left: 10px;
+	font-size: 20px;
+	color: white;
+	text-shadow: 2px 2px 4px black;
+}
+
+.gameDesc {
+	position: relative;
+	width: calc(100% - 58px);
+	left: 10px;
+	font-size: 13px;
+	color: white;
+	text-shadow: 2px 2px 4px black;
+}
+
+.gameIcon {
+	position: relative;
+	display: inline-block;
+	float: left;
+	top: 5px;
+	left: 5px;
+	width: 48px;
+	height: 48px;
+}
+
+.block {
+	position: relative;
+	vertical-align: baseline;
+	display: inline-block;
+	padding: 15px;
+	background-color: rgb(50,50,50);
+	background-image: url('img/darkNoise.png');
+	border-radius: 10px;
+	box-shadow: 2px 2px 5px rgba(0,0,0,0.5), 0 0 15px black inset;
+}
+
+.blockText {
+	position: relative;
+	margin-top: 10px;
+	width: 100%;
+}
+
+h1 {
+	margin-top: 5px;
+	margin-bottom: 15px;
+}
